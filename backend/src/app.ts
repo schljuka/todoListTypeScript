@@ -3,7 +3,7 @@ import express, { NextFunction, Request, Response } from "express";
 import notesRoutes from "./routes/routesNotes";
 import morgan from "morgan"
 import createHttpError, { isHttpError } from "http-errors";
-import mongoose from "mongoose";
+
 
 const app = express();
 
