@@ -2,6 +2,7 @@ import { Button, Navbar } from "react-bootstrap";
 import { User } from "../models/user";
 import * as NotesApi from "../network/notes_api";
 
+
 interface NavBarLoggedInViewProps {
     user: User,
     onLogoutSuccessful: () => void,
@@ -22,7 +23,7 @@ console.log(user);
     return (
         <>
             <Navbar.Text className="me-2">
-                Signed in as: {user.username}
+                Signed in as:  {user.email}
             </Navbar.Text>
             <Button onClick={logout}>Log out</Button>
         </>
